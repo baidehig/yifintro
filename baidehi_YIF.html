@@ -1,0 +1,161 @@
+<html><head>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<center>
+<br>
+<br>
+<p style="
+    font-size: 24px;
+    color: black;">Hi, I am Baidehi</p>
+<img src="Baidu1.jpeg" height="350px" width="380px">
+<p>I code when I am awkward, so I code all the time &#128512;</p>
+<a href="#works" class="button">Know Baidu</a>
+</center>
+<br>
+<br>
+<br>
+<br>
+
+<section id="works">
+<center>
+<header class="major">
+<h2>What Do I Do?</h2>
+</header>
+</center>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+
+ <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+<center>   
+    <img src="Baidu3.jpeg" style="width:90%">
+</center>
+    <div class="text">Runs an NGO by the Day</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+	 <center>
+    <img src="Baidu7.png" style="width:250px;height:360px">
+	 </center>
+    <div class="text">Software Engineer by the Night</div>
+  </div>
+
+ 
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+<center>
+<a href="#likes" class="button">Know More</a>
+</center>
+</section>
+<br>
+<br>
+<br>
+<section id="likes">
+<center>
+<header class="major">
+<h2>What Do I Like?</h2>
+</header>
+</center>
+<div class="posts">
+<article>
+<center>
+<h3>Hobbies</h3>
+<ul class="actions" style="margin:0 0 0 168">
+<li><a class="button">Reading</a></li>
+<li><a class="button">Painting</a></li>
+</ul>
+</center>
+<img src="Baidu2.jpeg" height="180px" width="155px" style="border-radius: 50%;margin: 52px;">
+<img src="Baidu5.jpeg" height="180px" width="155px" style="border-radius: 50%;margin: 52px;">
+</article>
+<article>
+<center>
+<h3>Passion</h3>
+<ul class="actions" style="margin:0 0 0 168">
+<li><a class="button">Teaching</a></li>
+<li><a class="button">Travelling</a></li>
+</ul>
+</center>
+<img src="Baidu10.jpeg" height="180px" width="155px" style="border-radius: 50%;margin: 52px;">
+<img src="Baidu4.jpeg" height="180px" width="155px" style="border-radius: 50%;margin: 52px;">
+</article>
+</div>
+<br>
+<center>
+<a href="#cats" class="button">Some Cat Info</a>
+</center>
+</section>
+<br>
+<br>
+<br>
+<br>
+<section id="cats">
+<center>
+<header class="major">
+<h2>Cat Trivia</h2>
+</header>
+<div style="margin: 0 0 0 200;">
+<ul class="actions">
+<li><a class="button">Alias: Crazy Cat Lady</a></li>
+<li><a class="button">Rescuing Cats Since: 2018</a></li>
+<li><a class="button">Cats Rescued: 8</a></li>
+<li><a class="button">Skills Acquired: Laziness</a></li>
+</ul>
+</center>
+<br/>
+</div>
+</section>
+<section>
+<center>
+<img src="Baidu6.jpeg" height="180px" width="155px" style="border-radius: 50%;margin: 52px;">
+<img src="Baidu9.jpeg" height="180px" width="155px" style="border-radius: 50%;margin: 52px;">
+<img src="Baidu8.jpeg" height="180px" width="155px" style="border-radius: 50%;margin: 52px;">
+</center>
+</section>
+<br/>
+<center>
+<a href="yif.html" class="button">Why YIF</a>
+</center>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body></html>
